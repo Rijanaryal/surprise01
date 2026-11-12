@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6a8c8"><title>Bestie, With Love ♡</title>
+<link rel="icon" type="image/svg+xml" href="assets/heart-logo.svg">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&family=Quicksand:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sparkles"></div>
+<div class="welcome-splash" id="welcomeSplash" role="status" aria-label="Opening your birthday surprise">
+ <div class="splash-heart" aria-hidden="true">💖</div>
+ <div class="splash-logo">PB</div>
+ <p>made with love</p>
+ <span class="splash-sparkle" aria-hidden="true">✦　♡　✦</span>
+</div>
+<main id="stage">
+<!-- PAGE 1: invitation -->
+<section class="page active" id="invite" aria-label="Birthday invitation">
+ <div class="invite-sheet striped">
+  <span class="decor d-flower">✿</span><span class="decor d-kiss">💋</span><span class="decor d-heart">♡</span>
+  <div class="camera-area">
+   <div class="camera-label">favorite<br>person <span>↴</span></div>
+   <div class="retro-camera">
+    <div class="camera-lens"><i></i></div><div class="camera-view"><img src="assets/a6d9066c-0314-4d0c-a8ba-f6ec8f5a762e.jpg" data-photo alt="A favorite photo"><span class="photo-placeholder">YOUR<br>FAVORITE<br>PHOTO ♡</span></div>
+    <div class="camera-dial"></div><div class="camera-flash"></div><div class="camera-controls">◉　▰　♡</div>
+   </div>
+   <div class="camera-flower">🌷</div>
+  </div>
+  <div class="invite-copy">
+   <div class="brand-lockup reveal" aria-label="Bestie, With Love">
+    <span class="brand-mark" aria-hidden="true"><span>💖</span><b>PB</b></span>
+    <span class="brand-name">BESTIE, WITH LOVE</span>
+    <span class="brand-note">a little birthday world made for you</span>
+   </div>
+   <p class="tiny-top reveal">a little something made just for you</p>
+   <h1 class="surprise-title reveal">DO YOU<br>WANT A<br>SURPRISE??</h1>
+   <div class="invite-buttons reveal"><button class="pill yes" data-go="password">YES!!</button><button class="pill no" data-go="nope">NO!!</button></div>
+   <p class="tiny-bottom reveal">“You are my sunshine, my moon, and all of my stars.”</p>
+  </div>
+  <span class="decor d-bow">🎀</span><span class="decor d-flower2">✿</span>
+ </div>
+</section>
+
+<!-- PAGE 2: try again -->
+<section class="page" id="nope" aria-label="Try again">
+ <div class="nope-sheet">
+  <div class="star-cluster reveal">✧　☆　✧</div>
+  <div class="angry-cat-wrap reveal"><img src="assets/file.png" alt="Cute pink cat birthday sticker" class="nope-image"><span class="nope-fallback">🥳</span></div>
+  <div class="nope-copy"><h2 class="reveal">NOOOO!!!<br>TRY AGAIN</h2><button class="pill back reveal" data-go="invite">« BACKK</button></div>
+  <span class="float-heart h1 reveal">💗</span><span class="float-heart h2 reveal">💗</span>
+ </div>
+</section>
+
+<!-- PAGE 3: password -->
+<section class="page" id="password" aria-label="Enter secret password">
+ <div class="password-sheet striped">
+  <div class="heart-photo-frame reveal"><span class="memory-label">OUR LITTLE WORLD</span><div class="heart-photo"><img src="assets/ea3731ca-dd43-4cef-9e0c-e7ed744fdd01.jpg" data-photo alt="A favorite memory together"><span class="photo-placeholder">OUR<br>MEMORY ♡</span></div><span class="memory-caption">a heart full of us ♡</span></div>
+  <div class="keypad-card reveal">
+   <h2>ENTER PASSWORD <span>♙</span></h2><div class="pin-dots" id="pinDots">○ ○ ○ ○</div>
+   <div class="keypad">
+    <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+    <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+    <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+    <button data-key="clear">⌫</button><button data-key="0">0</button><button data-key="enter">♡</button>
+   </div><p id="pinMessage">only you know the little secret...</p>
+  </div>
+  <span class="teddy reveal">🧸</span><span class="password-heart reveal">♡</span>
+ </div>
+</section>
+
+<!-- PAGE 4: cat delivers letter -->
+<section class="page" id="letter" aria-label="A letter for you">
+ <div class="letter-delivery striped">
+  <div class="bunting reveal">♡　✿　♡　✿　♡</div>
+  <div class="letter-cat reveal"><img src="assets/cat-letter.svg" alt="A cute cat holding a letter"></div>
+  <div class="envelope-side">
+   <button class="envelope reveal" id="openEnvelope" aria-label="Open the letter"><span class="envelope-flap"></span><span class="envelope-heart">♥</span></button>
+   <h2 class="reveal">LETTER<br>FOR YOU</h2><p class="click-here reveal">click here ↗</p>
+  </div>
+  <div class="delivery-caption reveal">your little delivery has arrived ♡</div>
+ </div>
+</section>
+
+<!-- PAGE 5: actual letter -->
+<section class="page" id="note" aria-label="Birthday letter">
+ <article class="note-paper">
+  <div class="note-stamp reveal">♡ A NOTE FOR MY FAVORITE HUMAN ♡</div>
+  <h2 class="reveal">To my pretty best friend,</h2>
+  <p class="reveal">Happy birthday to the person who can turn the most ordinary day into one of my favorite memories. Life is a little louder, funnier, and brighter with you in it.</p>
+  <p class="reveal">Thank you for being my safe place for silly stories, endless laughs, honest advice, and all those moments that somehow become our funniest memories. I hope you never forget how special you are—not just today, but on every ordinary day too.</p>
+  <p class="reveal">May this year bring you new adventures, kind people, peaceful days, big dreams coming true, and more reasons to smile than you can count. Whatever life brings next, I'll always be cheering for you.</p>
+  <p class="note-sign reveal">With all my love,<br><b>Your best friend ♡</b></p>
+  <button class="pill next reveal" data-go="pretty">NEXT »</button>
+ </article>
+</section>
+
+<!-- PAGE 6: scrapbook gallery -->
+<section class="page gallery-page" id="pretty" aria-label="Photo scrapbook">
+ <div class="scrapbook">
+  <header class="scrap-head"><span class="tape reveal">♡</span><h2 class="reveal">MY PRETTY<br><em>GIRL</em></h2><p class="reveal">happy birthday to my favorite person</p></header>
+  <div class="scrap-grid">
+   <figure class="polaroid p1 reveal"><img src="assets/a191b6e3-01c4-4000-8acc-2e6762bbd72b.jpg" data-photo alt="A birthday scrapbook memory"><figcaption>your smile is my favorite</figcaption></figure>
+   <figure class="polaroid p2 reveal"><img src="assets/3dae8eba-ac41-4142-b626-911a9b8b1d08.jpg" data-photo alt="A sweet memory together"><figcaption>little moments, forever memories</figcaption></figure>
+   <figure class="polaroid p3 reveal"><img src="assets/6fc7664c-ca9f-4ced-9687-6691b7569960.jpg" data-photo alt="A favorite photo memory"><figcaption>my person, always ♡</figcaption></figure>
+   <figure class="polaroid p4 reveal"><img src="assets/0c1c70bf-7811-4e04-a698-a71e8c1dfd6b.jpg" data-photo alt="A happy day together"><figcaption>making memories with you</figcaption></figure>
+   <figure class="polaroid p5 reveal"><img src="assets/9180f46e-effb-4c11-99cb-63cb7e86b3dd.jpg" data-photo alt="A special friendship memory"><figcaption>all the laughs we keep</figcaption></figure>
+   <figure class="polaroid p6 reveal"><img src="assets/bceed73f-ad9b-4214-8f36-90677b7f1fa2.jpg" data-photo alt="A favorite adventure together"><figcaption>more adventures, please</figcaption></figure>
+   <figure class="polaroid p7 reveal"><img src="assets/b774a3df-f78d-4fad-ae99-5a21178e3fb6.jpg" data-photo alt="A lovely day to remember"><figcaption>my favorite kind of day</figcaption></figure>
+   <figure class="polaroid p8 reveal"><img src="assets/21599321-f19a-4a19-a808-16a097d0f30e.jpg" data-photo alt="A precious best friend memory"><figcaption>you make life sweeter</figcaption></figure>
+   <figure class="polaroid p9 reveal"><img src="assets/c196c816-51e2-4693-ad24-70af416024a4.jpg" data-photo alt="One more memory to keep"><figcaption>one for the memory book ♡</figcaption></figure>
+  </div>
+  <div class="scrap-quote reveal">“You are my sun, my moon,<br>and all of my stars.”</div>
+  <div class="scrap-final reveal">HAPPY <span>BIRTHDAY</span> ♡</div>
+  <button class="pill restart reveal" data-go="invite">START AGAIN ↻</button>
+ </div>
+</section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="script.js"></script>
+</body></html>

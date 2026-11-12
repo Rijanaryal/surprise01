@@ -1,0 +1,2 @@
+The supplied photos are wired directly from the parent assets folder into the invitation camera, "Our Memory," and the scrapbook.
+Add any extra photos to the parent assets folder and reference them in index.html when creating another scrapbook card.
